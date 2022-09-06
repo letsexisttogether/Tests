@@ -5,12 +5,14 @@
 
 _BEGIN_COMP_
 
-bool AbscendingCompare(int firstValue, int secondValue)
+template<class _CompType>
+bool AbscendingCompare(_CompType firstValue, _CompType secondValue)
 {
 	return firstValue < secondValue;
 }
 
-bool DescendingCompare(int firstValue, int secondValue)
+template<class _CompType>
+bool DescendingCompare(_CompType firstValue, _CompType secondValue)
 {
 	return !AbscendingCompare(firstValue, secondValue);
 }
